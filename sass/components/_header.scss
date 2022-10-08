@@ -1,0 +1,104 @@
+.header { 
+    border-bottom: 1px solid #ECECEC;
+}
+.logo {
+    display:flex;
+    align-items: center;
+    margin-right: 93px;
+    color:var(--black-text-color);
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    &__studio {
+        margin-bottom: 20px;
+        color: var(--primary-white-color);
+        margin-right: 0;
+    }
+    &__accent {
+        color: var(--accent-text-color);
+    }
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+}
+.header-nav__list {
+    display: flex;
+    margin-left: auto;
+}
+.header-nav__item:not(:first-child) {
+    margin-left: 50px;
+}
+.header-nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &::before {
+        position: absolute;
+        content: "";
+        left: 50%;
+        bottom: 0;
+        width: 0;
+        height: 4px;
+        background-color: var(--accent-text-color);
+        border-radius: 2px;
+        transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transform: translateX(-50%);
+        transform: translateY();
+    }
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+        &::before {
+            background-color: var(--accent-text-color);
+            width: 100%;
+        }
+    }
+}
+
+.header__container {
+    @extend %display;
+}
+
+.header-nav__item {
+    position: relative;
+    transform: translateY(1px);
+}
+
+.header-nav__link--current {
+    color: var(--accent-text-color);
+    &::before {
+        color: var(--accent-text-color);
+    width: 100%;
+    }
+}
+
+.header-nav__contact {
+    @extend %display;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration-line: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
+}
+
+.header-nav__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}

@@ -1,0 +1,30 @@
+.section.job {
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
+}
+
+.job__list {
+    display: flex;
+}
+.job__item {
+    margin-right: 30px;
+}
+.job__item:last-child {
+    margin-right: 0;
+}
+.job__img {
+    position: relative;
+}
+.job__name {
+    @extend %display;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--primary-white-color);
+    background: rgba(47, 48, 58, 0.8);
+}

@@ -1,0 +1,24 @@
+.header__btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    padding: 12px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-white-color);
+    .menu-btn__close {
+        display: none;
+    }
+    &.active {
+        .menu-btn__menu {
+            display: none;
+        }
+        .menu-btn__close {
+            display: block;
+        }
+    }
+}
+
+
+

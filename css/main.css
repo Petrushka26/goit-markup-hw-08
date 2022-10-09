@@ -309,6 +309,26 @@ img {
   fill: currentColor;
 }
 
+.header__btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  padding: 12px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-white-color);
+}
+.header__btn .menu-btn__close {
+  display: none;
+}
+.header__btn.active .menu-btn__menu {
+  display: none;
+}
+.header__btn.active .menu-btn__close {
+  display: block;
+}
+
 .hero {
   text-align: center;
   background-color: var(--dark-grey);

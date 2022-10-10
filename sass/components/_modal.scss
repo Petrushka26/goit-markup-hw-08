@@ -51,9 +51,17 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms linear;
-    min-width: 528px;
-    min-height: 581px;
+    width: 450px;
+    height: 609px;
     background-color: var(--primary-white-color);
+    @media screen and (max-width: 479px) {
+        width: calc(100% - 30px);
+    }
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
+    
 }
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.6);
@@ -130,9 +138,17 @@
 .form-agreement__label {
     @extend %display;
     font-weight: 400;
+   font-size: 12px;
+   line-height: 1.16;
+   letter-spacing: 0.03em;
+   @media screen and (max-width: 479px) {
+    font-size: 10px;
+    line-height: 1.16;
+   }
+   @media screen and (min-width: 1200px) {
    font-size: 14px;
    line-height: 1.71;
-   letter-spacing: 0.03em;
+   }
 }
 .form-agreement__wrapp {
     @extend %display;

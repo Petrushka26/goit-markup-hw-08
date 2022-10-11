@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.min.css"/>
+    <link rel="stylesheet" href="./css/main.min.css">
   </head>
-  <body class="active">
+  <body>
     <!-- The head of the page-->
     <header class="header">
       <div class="container header__container">
@@ -16,9 +16,7 @@
             <span class="logo__accent">Web</span>Studio</a>
             <button 
             type="button" 
-            class="menu-toggle js-open-menu"
-            aria-expended="false"
-            aria-controls="mobile-menu">
+            class="menu-toggle js-open-menu">
             <svg class="menu-mobile__icon" width="24" height="16">
               <use class="menu-btn__menu" href="./images/image-symbol/symbol-defs.svg#icon-menu"></use>
               </svg>
@@ -55,7 +53,7 @@
       </div>
       </div>
     </header>
-    <div class="menu-container js-menu-container is-open" id="mobile-menu">
+    <div class="menu-container js-menu-container">
       <button type="button" class="menu-toggle js-close-menu">
         <svg class="menu-mobile__icon" width="19" height="19">
           <use class="menu-btn__close" href="./images/image-symbol/symbol-defs.svg#icon-close-black"></use>
@@ -216,37 +214,42 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="people__list">
             <li class="people__item">
-              <img class="people__img"
-                src="./images/ihor.jpg"
-                alt="дизайнер"
-                width="270"
-                height="270"
+              <picture>
+                <source srcset="./images/team-desktop/ihor@1x.jpg 1x, ./images/team-desktop/ihor@2x.jpg 2x" 
+                        media="(min-width:1200px)"/>
+                <source srcset="./images/team-tablet/ihor@1x-tablet.jpg 1x, ./images/team-tablet/ihor@2x-tablet.jpg 2x"
+                        media="(min-width:768px)"/>
+                <source srcset="./images/team-mobile/ihor@1x-mob.jpg 1x, ./images/team-mobile/ihor@2x-mob.jpg 2x"
+                        media="(min-width:320px)"/>
+              <img  src="./images/team-desktop/ihor@1x.jpg"
+                    alt="дизайнер"
               />
+            </picture>
               <div class="people__description">
                 <h3 class="people__name">Ігор Дем'яненко</h3>
                 <p class="people__profession">Product Designer</p>
               </div>
               <ul class="social">
                 <li class="social__item">
-                  <a href="#" target="_blank" class="social__link" target="_blanc"><svg class="social__icon" width="20" height="20">
+                  <a href="#" target="_blank" class="social__link"><svg class="social__icon" width="20" height="20">
                       <use href="./images/image-symbol/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" target="_blank" class="social__link" target="_blanc"><svg class="social__icon" width="20" height="20">
+                  <a href="#" target="_blank" class="social__link"><svg class="social__icon" width="20" height="20">
                       <use href="./images/image-symbol/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" target="_blank" class="social__link" target="_blanc"><svg class="social__icon" width="20" height="20">
+                  <a href="#" target="_blank" class="social__link"><svg class="social__icon" width="20" height="20">
                       <use href="./images/image-symbol/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" target="_blank" class="social__link" target="_blanc"><svg class="social__icon" width="20" height="20">
+                  <a href="#" target="_blank" class="social__link"><svg class="social__icon" width="20" height="20">
                       <use href="./images/image-symbol/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
                   </a>
@@ -254,37 +257,42 @@
               </ul>
             </li>
             <li class="people__item">
-              <img class="people__img"
-                src="./images/olga.jpg"
-                alt="розробник"
-                width="270"
-                height="270"
+              <picture>
+                <source srcset="./images/team-desktop/olga@1x.jpg 1x, ./images/team-desktop/olga@2x.jpg 2x" 
+                        media="(min-width:1200px)"/>
+                <source srcset="./images/team-tablet/olga@1x-tablet.jpg 1x, ./images/team-tablet/olga@2x-tablet.jpg 2x"
+                        media="(min-width:768px)"/>
+                <source srcset="./images/team-mobile/olga@1x-mob.jpg 1x, ./images/team-mobile/olga@2x-mob.jpg 2x"
+                        media="(min-width:320px)"/>
+              <img  src="./images/team-desktop/olga@1x.jpg"
+                    alt="дизайнер"
               />
+            </picture>
               <div class="people__description">
                 <h3 class="people__name">Ольга Рєпіна</h3>
                 <p class="people__profession">Frontend Developer</p>
               </div>
               <ul class="social">
                 <li class="social__item">
-                  <a href="#" target="_blank" class="social__link" target="_blanc"><svg class="social__icon" width="20" height="20">
+                  <a href="#" target="_blank" class="social__link"><svg class="social__icon" width="20" height="20">
                       <use href="./images/image-symbol/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" target="_blank" class="social__link" target="_blanc"><svg class="social__icon" width="20" height="20">
+                  <a href="#" target="_blank" class="social__link"><svg class="social__icon" width="20" height="20">
                       <use href="./images/image-symbol/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" target="_blank" class="social__link" target="_blanc"><svg class="social__icon" width="20" height="20">
+                  <a href="#" target="_blank" class="social__link"><svg class="social__icon" width="20" height="20">
                       <use href="./images/image-symbol/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" target="_blank" class="social__link" target="_blanc"><svg class="social__icon" width="20" height="20">
+                  <a href="#" target="_blank" class="social__link"><svg class="social__icon" width="20" height="20">
                       <use href="./images/image-symbol/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
                   </a>
@@ -292,37 +300,42 @@
               </ul>
             </li>
             <li class="people__item">
-              <img class="people__img"
-                src="./images/mykola.jpg"
-                alt="маркетинг"
-                width="270"
-                height="270"
+              <picture>
+                <source srcset="./images/team-desktop/mikola@1x.jpg 1x, ./images/team-desktop/mikola@2x.jpg 2x" 
+                        media="(min-width:1200px)"/>
+                <source srcset="./images/team-tablet/mikola@1x-tablet.jpg 1x, ./images/team-tablet/mikola@2x-tablet.jpg 2x"
+                        media="(min-width:768px)"/>
+                <source srcset="./images/team-mobile/mikola@1x-mob.jpg 1x, ./images/team-mobile/mikola@2x-mob.jpg 2x"
+                        media="(min-width:320px)"/>
+              <img  src="./images/team-desktop/mikola@1x.jpg"
+                    alt="дизайнер"
               />
+            </picture>
               <div class="people__description">
                 <h3 class="people__name">Микола Тарасов</h3>
                 <p class="people__profession">Marketing</p>
               </div>
               <ul class="social">
                 <li class="social__item">
-                  <a href="#" target="_blank" class="social__link" target="_blanc"><svg class="social__icon" width="20" height="20">
+                  <a href="#" target="_blank" class="social__link"><svg class="social__icon" width="20" height="20">
                       <use href="./images/image-symbol/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" target="_blank" class="social__link" target="_blanc"><svg class="social__icon" width="20" height="20">
+                  <a href="#" target="_blank" class="social__link"><svg class="social__icon" width="20" height="20">
                       <use href="./images/image-symbol/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" target="_blank" class="social__link" target="_blanc"><svg class="social__icon" width="20" height="20">
+                  <a href="#" target="_blank" class="social__link"><svg class="social__icon" width="20" height="20">
                       <use href="./images/image-symbol/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" target="_blank" class="social__link" target="_blanc"><svg class="social__icon" width="20" height="20">
+                  <a href="#" target="_blank" class="social__link"><svg class="social__icon" width="20" height="20">
                       <use href="./images/image-symbol/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
                   </a>
@@ -330,37 +343,42 @@
               </ul>
             </li>
             <li class="people__item">
-              <img class="people__img"
-                src="./images/myhailo.jpg"
-                alt="дизайнер"
-                width="270"
-                height="270"
+              <picture>
+                <source srcset="./images/team-desktop/mihailo@1x.jpg 1x, ./images/team-desktop/mihailo@2x.jpg 2x" 
+                        media="(min-width:1200px)"/>
+                <source srcset="./images/team-tablet/mihailo@1x-tablet.jpg 1x, ./images/team-tablet/mihailo@2x-tablet.jpg 2x"
+                        media="(min-width:768px)"/>
+                <source srcset="./images/team-mobile/mihailo@1x-mob.jpg 1x, ./images/team-mobile/mihailo@2x-mob.jpg 2x"
+                        media="(min-width:320px)"/>
+              <img  src="./images/team-desktop/mihailo@1x.jpg"
+                    alt="дизайнер"
               />
+            </picture>
               <div class="people__description">
                 <h3 class="people__name">Михайло Єрмаков</h3>
                 <p class="people__profession">UI Designer</p>
               </div>
               <ul class="social">
                 <li class="social__item">
-                  <a href="#" target="_blank" class="social__link" target="_blanc"><svg class="social__icon" width="20" height="20">
+                  <a href="#" target="_blank" class="social__link"><svg class="social__icon" width="20" height="20">
                       <use href="./images/image-symbol/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" target="_blank" class="social__link" target="_blanc"><svg class="social__icon" width="20" height="20">
+                  <a href="#" target="_blank" class="social__link"><svg class="social__icon" width="20" height="20">
                       <use href="./images/image-symbol/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" target="_blank" class="social__link" target="_blanc"><svg class="social__icon" width="20" height="20">
+                  <a href="#" target="_blank" class="social__link"><svg class="social__icon" width="20" height="20">
                       <use href="./images/image-symbol/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" target="_blank" class="social__link" target="_blanc"><svg class="social__icon" width="20" height="20">
+                  <a href="#" target="_blank" class="social__link"><svg class="social__icon" width="20" height="20">
                       <use href="./images/image-symbol/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
                   </a>
@@ -450,7 +468,7 @@
         <form class="form-post">
           <label class="form-post__label" for="mail">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</label>
           <div class="form-post__btn">
-          <input class="form-post__input" type="mail" name="mail" placeholder="E-mail"/>
+          <input class="form-post__input" type="email" name="mail" placeholder="email"/>
           <button class="form-post__button" type="submit">Підписатися
             <svg class="form-post__icon" width="24" height="24"><use href="./images/image-symbol/symbol-defs.svg#icon-send"></use></svg>
           </button>
@@ -500,12 +518,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

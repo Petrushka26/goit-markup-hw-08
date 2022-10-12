@@ -39,8 +39,8 @@
 }
 .push-examples__list {
     display: block;
-    @media screen and (min-width: 1200px) {
-        display: flex;
+    @media screen and (min-width: $desktop) {
+    display: flex;
     flex-wrap: wrap;
     gap: 30px;
     }
@@ -61,7 +61,7 @@
             justify-content: center;
         }
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         flex-basis: calc((100% - 2 * 30px) / 3);
     }
 }

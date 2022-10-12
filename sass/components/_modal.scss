@@ -145,7 +145,7 @@
     font-size: 10px;
     line-height: 1.16;
    }
-   @media screen and (min-width: 1200px) {
+   @media screen and (min-width: $desktop) {
    font-size: 14px;
    line-height: 1.71;
    }

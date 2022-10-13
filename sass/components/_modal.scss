@@ -57,7 +57,7 @@
     @media screen and (max-width: 479px) {
         width: calc(100% - 30px);
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
         width: 528px;
         height: 581px;
     }
@@ -141,10 +141,6 @@
    font-size: 12px;
    line-height: 1.16;
    letter-spacing: 0.03em;
-   @media screen and (max-width: 479px) {
-    font-size: 10px;
-    line-height: 1.16;
-   }
    @media screen and (min-width: $desktop) {
    font-size: 14px;
    line-height: 1.71;

@@ -24,9 +24,7 @@
 
 .header-navigation {
     &--menu {
-    @media screen and (max-width: 767px) {
         display: none;
-    }
     }
     @media screen and (min-width: $tablet) {
     display: flex;
@@ -36,28 +34,29 @@
 
 .header-nav__list {
    &.add {
-    @media screen and (max-width: 767px) {
         margin-bottom: 64px;
-    }
     }
     @media screen and (min-width: $tablet) {
         display: flex;
     margin-left: auto;
     }
     &--contact {
-        @media screen and (max-width: 767px) {
             display: none;
-        }
-        @media screen and (min-width: $tablet) and (max-width: 1199px) {
+            @media screen and (min-width: $tablet) and (max-width: 1199px) {
+            display: flex;
             flex-direction: column;
-        }
+            }
+            @media screen and (min-width: 1200px) {
+                display: flex;
+            }
     }
 }
 
 .header-nav__item {
     &:not(:first-child) {
-        @media screen and (max-width: 767px) {
-            margin-top: 35px;  
+        margin-top: 35px;
+        @media screen and (min-width: $tablet) {
+            margin-top: 0; 
         }
     }
     transform: translateY(1px);
@@ -134,12 +133,11 @@
 }
 
 .header-nav__contact {
-    display: flex;
-    align-items: center;
+    display: block;
+    font-size: 30px;
+    line-height: 1.17;
     color: var(--primary-text-color);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration-line: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -147,24 +145,20 @@
     &:focus {
         color: var(--accent-text-color);
     }
-    @media screen and (max-width: 767px) {
-        display: block;
-        font-weight: 500;
-        font-size: 30px;
-        line-height: 1.17;
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        line-height: 1.14;
     }
-
     &.mail {
-        @media screen and (max-width: 767px) {
-        font-weight: 500;
         font-size: 24px;
-        line-height: 28px;
-        letter-spacing: 0.02em;
-        }
+        line-height: 1.16;
     }
     &--tel {
-        @media screen and (max-width: 767px) {
-            color: var(--accent-text-color);
+        color: var(--accent-text-color);
+        @media screen and (min-width: $tablet) {
+            color: var(--primary-text-color);
         }
     } 
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
@@ -186,6 +180,9 @@
 }
 
 .menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -201,11 +198,8 @@
     &.is-open {
             transform: translateX(0);
     }
-    @media screen and (max-width: 767px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
+    @media screen and (min-width: $tablet) {
+        display: none;
     }
 }
 .menu-container .menu-toggle {
